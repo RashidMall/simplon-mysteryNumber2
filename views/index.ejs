@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nombre Mystère</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="/try" method="post">
+        <input type="number" min="0" max="10" name="number_try">
+        <button type="submit">Valider</button>
+    </form>
+
+    <p>The mystery number is <%= message %> <%= userNb %></p>
+
+    <script src="../server.js"></script>
+</body>
+</html>
